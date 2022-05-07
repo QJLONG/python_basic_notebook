@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<people id="people">
+	<people>
+		<name>王晶晶</name>
+		<age>28</age>
+	</people>
+	<people>
+		<name>至尊宝</name>
+		<age>300</age>
+	</people>
+</people>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--实体
+    &amp;  &
+    &lt;   <
+    &gt;   >
+    &quot; "
+    &apos; '
+-->
+
+<!--声明（自定义）实体-->
+<!DOCTYPE people[
+        <!--实体声明-->
+        <!ENTITY nm "张三">
+]>
+
+<!-- 根节点 -->
+<people>
+    <!-- 子节点 -->
+    <person>
+        <name>王晶晶</name>
+        <age>28</age>
+        <sex>male</sex>
+    </person>
+    <!--引用实体的方法-->
+    <person>
+        <name>&nm;</name>
+        <age>300</age>
+    </person>
+</people>
+
+<!-- 方式二
+<people>
+    <person name="王晶晶" age="28"></person>
+    <person name="至尊宝" age="300"></person>
+</people>
+-->
